@@ -1,0 +1,134 @@
+<!-- <p> </p>标签代表了段落-->
+<!-- <!DOCTYPE html>: 这个声明帮助浏览器正确的显示网页
+<html>: 这个元素包含了整个HTML文档
+<head>: 这个元素包含了文档的元信息，比如文档的标题。元信息不会被显示在页面中
+<title>: 指定了网页的标题，这个标题会被显示在浏览器的标题栏或者标签页上
+<body>: 这个元素包含了网页的全部内容，比如文本，图片，音频等 -->
+    <!-- <h1>到<h6>: 用于定义6级不同大小的标题，<h1>最大，<h6>最小
+        <p>: 用于定义段落
+        <br>: 插入一个换行符
+        <a href="url">: 用于创建链接
+        <img src="image.jpg" alt="My Image">: 用于插入图像
+        <div>: 用于把文档分割为独立的部分。它可以用来组合其他HTML元素
+        <video>:用于添加视频 -->
+            <!-- 内部样式表：在<head>部分中使用<style>元素
+                <head>
+                <style>
+                p {
+                  color: red;
+                }
+                </style>
+                </head> -->
+                <!-- color: 可以设置文本颜色。例如：
+                p {
+                  color: red;
+                }
+                以上代码将把所有<p>标签的字体颜色设置为红色。
+                font-size: 用来设置文本的字体大小。例如：
+                p {
+                  font-size: 20px;
+                }
+                以上代码将把所有<p>标签的font-size设置为20像素。
+                background-color: 用来设置元素的背景色。例如：
+                body {
+                  background-color: lightblue;
+                }
+                以上代码将背景色设置为浅蓝色。
+                margin: 用来设置元素的外边距。例如：
+                p {
+                  margin: 10px;
+                }
+                以上代码将所有<p>标签的margin设置为10像素。
+                padding: 用来设置元素的内边距。例如：
+                p {
+                  padding: 10px;
+                }
+                以上代码将所有<p>标签的padding设置为10像素。
+                
+                border: 用来设置元素的边框。例如：
+                p {
+                  border: 1px solid black;
+                }
+                以上代码将把所有<p>标签的border设置为1像素的黑色实线边框。 -->
+<!-- 例：一个简单的网页模版-->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>我的第一个网页</title>
+<style>
+h1{
+color:red;
+font-size: 200px;
+}
+
+body {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+<h1>这是我的网页</h1>
+<a href="https://www.baidu.com"> <img src="image.jpg"></a>
+<video controls>
+<source src="demo.mp4" type="video/mp4">
+</video>
+</body>
+
+</html>  -->
+
+
+<!-- 前后的标签名必须一致
+主要格式：<标签名 id="（相当于身份证）"> 内容 <标签名/>
+<标签名 class="（种类）"> 内容 <标签名/>
+h1~h6可以控制字体大小h1最大，h6最小 -->
+<hhh>天气真好</hhh>
+<h1 id="sss">我真大</h1>
+<h1>我真大1</h1>
+<h1 class="big">我真大2</h1>
+<h1 class="big">我真大3</h1>
+<h1 class="smalll">我真大4</h1>
+<h6>我真小</h6>
+
+<!-- 超链接 
+<a href="所要跳转到的网址或地址">内容</a>
+<img src="所要插入图片的地址或者网址"> 注意：该<img>只有头就行
+点击图片就可以跳转链接的做法：<a href=""><img src=""></a>
+<a href="https://www.baidu.com"><img src="1.png"></a> -->
+<a href="https://www.baidu.com">跳转百度</a>
+
+<img src="1.png">
+
+<a href="https://www.baidu.com"><img src="1.png"></a>
+
+<!-- 给网页加一个视频标签 
+<video controls(显示处视频的播放按钮)> 
+    视频<source src="demo4.mp4(连接网址或地址)" type="video/mp4(视频格式)">
+</video> -->
+<video controls>
+    <source src="demo.mp4" type="video/mp4">
+</video>
+
+<!-- css标签：
+style 标签专门存放css样式
+选择器种类：标签名，id（用时需要加个#），种类class(用时在前面加个.)
+例：
+<sytle>
+    选择器（标签名）{
+        color:red;(字体颜色)
+        font-size:large;(字体大小)  99px(99像素)
+    }
+</style> -->
+<style>
+    hhh{
+        color: red;
+    }
+    h6{
+        font-size: large;
+    }
+    #sss{
+        font-size: 56px;
+    }
+    .big{
+        font-size: 99px;
+    }
+</style>
